@@ -77,7 +77,7 @@ namespace HeshAutorization
                 else if (Proverka(Login, Password) == false)
                 {
 
-                    Password = CreateMD5(Password); //преобразуем хэш из массива в строку, состоящую из шестнадцатеричных символов в верхнем регистре
+                    Password = CreateMD5(Password); 
 
                     string commandString = $"insert into avt_reg(логин, пароль, имя, фамилия, должность) values('{Login}', '{Password}', '{Name}', '{Family}', '{Dolgnost}')";
 
